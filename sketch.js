@@ -5,16 +5,16 @@ function setup(){
   wave = new p5.Oscillator();
   wave.setType('sine');
   // wave.start();
-  wave.freq(440);
-  wave.amp(0);
+  wave.freq(440); /*음정*/
+  wave.amp(0); /*볼륨*/
 
   button = createButton('play/pause');
   button.mousePressed(toggle);
 }
 
 function draw(){
-
 }
+
 function toggle(){
   if (!playing) {
     wave.start();
