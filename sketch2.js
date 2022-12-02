@@ -7,7 +7,8 @@ function setup(){
 }
 function draw(){
   background(r,g,b);
-  console.log('draw');
+  //console.log('draw');
+  text(accelerationX + ","+ accelerationY +","+ accelerationZ);
 }
 function deviceMoved() {
   r = map(accelerationX, -90,90,100,175);
